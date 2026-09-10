@@ -1,1 +1,38 @@
-/.gitattributes
+# Dependencies
+node_modules/
+
+# Cloudflare / Wrangler
+.wrangler/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE / Editor
+.vscode/
+.idea/
+
+# Build / distribution
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Local development
+.dev.vars
+
+# Cloudflare generated files
+.wrangler/
