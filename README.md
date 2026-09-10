@@ -1,2 +1,2 @@
-# Coloshop_Webapp
+# EverydayGoods
 Online E-commerce Platform
