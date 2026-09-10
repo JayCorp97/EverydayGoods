@@ -1,0 +1,46 @@
+/* Extra styles for the pages we added on top of the Colo Shop template */
+#shop_toast { position: fixed; left: 50%; bottom: 24px; transform: translate(-50%, 20px); background: #232530; color: #fff; padding: 10px 18px; border-radius: 4px; font-size: 14px; opacity: 0; transition: all .25s; z-index: 999; pointer-events: none; }
+#shop_toast.show { opacity: 1; transform: translate(-50%, 0); }
+#shop_toast.error { background: #d9382b; }
+.shop_page { padding-top: 40px; padding-bottom: 80px; min-height: 60vh; }
+.shop_page h1 { font-size: 30px; font-weight: 500; margin-bottom: 25px; }
+.shop_table { width: 100%; border-collapse: collapse; font-size: 14px; margin-bottom: 25px; }
+.shop_table th { text-align: left; font-weight: 500; color: #51545f; border-bottom: 2px solid #e8e8e8; padding: 10px 8px; }
+.shop_table td { padding: 12px 8px; border-bottom: 1px solid #f0f0f0; vertical-align: middle; }
+.shop_table input[type=number], .shop_table select { width: 80px; padding: 5px; border: 1px solid #ddd; }
+.shop_table select { width: auto; }
+.shop_remove { color: #d9382b; }
+.shop_low { color: #e07b00; font-weight: 600; }
+.shop_total { font-size: 18px; margin-bottom: 20px; }
+.shop_line { display: flex; justify-content: space-between; padding: 4px 0; font-size: 14px; }
+.shop_line_total { border-top: 1px solid #e8e8e8; margin-top: 8px; padding-top: 10px; font-weight: 600; font-size: 16px; }
+.shop_muted { color: #8a8d97; font-size: 13px; margin-bottom: 8px; }
+.shop_empty { color: #51545f; margin: 30px 0 20px; }
+.shop_order { border: 1px solid #e8e8e8; padding: 18px 20px; margin-bottom: 18px; }
+.shop_status { font-size: 12px; padding: 3px 10px; border-radius: 12px; background: #e8f0fe; color: #1a4fb3; }
+.shop_status_shipped, .shop_status_delivered { background: #e5f6e8; color: #1d7a37; }
+.shop_status_cancelled { background: #fbe6e4; color: #a12b21; }
+.shop_form label { display: block; font-size: 13px; color: #51545f; margin-bottom: 4px; margin-top: 12px; }
+.shop_form input, .shop_form select, .shop_form textarea { width: 100%; height: 42px; border: 1px solid #ddd; padding: 0 12px; font-size: 14px; outline: none; }
+.shop_form textarea { height: 80px; padding: 10px 12px; }
+.shop_form input:focus, .shop_form select:focus, .shop_form textarea:focus { border-color: #fe4c50; }
+.shop_form .red_button { margin-top: 20px; }
+.shop_form .red_button button { background: none; border: 0; color: #fff; width: 100%; height: 100%; text-transform: uppercase; font-size: 12px; font-weight: 500; letter-spacing: 0.1em; cursor: pointer; }
+.shop_summary { background: #f7f7f7; padding: 25px; }
+.shop_summary h4 { font-size: 18px; margin-bottom: 15px; }
+.shop_demo { background: #f7f7f7; padding: 12px 15px; font-size: 13px; color: #51545f; margin-top: 20px; }
+.shop_side_search { display: flex; margin-bottom: 10px; }
+.shop_side_search input { flex: 1; height: 38px; border: 1px solid #ddd; padding: 0 10px; font-size: 13px; }
+.shop_side_search button { height: 38px; padding: 0 14px; border: 0; background: #fe4c50; color: #fff; cursor: pointer; }
+.add_to_cart_button.disabled { background: #b5b5b5; }
+.single_stock { font-size: 13px; color: #51545f; margin-bottom: 15px; }
+.admin_stats { font-size: 14px; color: #51545f; margin: -15px 0 25px; }
+.admin_section { margin-bottom: 50px; }
+.admin_section h3 { font-size: 20px; font-weight: 500; margin-bottom: 15px; }
+.product-item { margin-bottom: 20px; }
+
+/* Lay out product tiles in rows without the Isotope plugin */
+.product-grid { display: flex; flex-wrap: wrap; justify-content: center; }
+.product-grid .product-item { position: static !important; width: 20%; }
+@media (max-width: 991px) { .product-grid .product-item { width: 33.333%; } }
+@media (max-width: 575px) { .product-grid .product-item { width: 50%; } }
